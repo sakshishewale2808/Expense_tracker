@@ -10,6 +10,7 @@ const postTransaction = async(req,res)=>{
         user
     });
 
+
     try{
         const savedTransaction = await transaction.save();
         res.json({
@@ -27,4 +28,22 @@ const postTransaction = async(req,res)=>{
     }
 
 }
-export {postTransaction}
+const getTransaction = async(req,res)=>{
+    const {userId} = req.query;
+    const user = await User.findById(userId)
+    if(!user){
+        return res.json({
+            success:false,
+            message:"User not found",
+            data:null
+        })
+    }
+    const transactions = await Transaction.find({user:userId})
+    res.json({
+        success:true,
+        message:"transaction fetched successfully",
+        data:transactions
+    })
+
+}
+export {postTransaction,getTransaction}
