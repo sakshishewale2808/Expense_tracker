@@ -1,58 +1,81 @@
-.home-heading{
-    color: #3474eb;
-    font-size: 20px;
+.home-heading {
+    color: #0033cc;
+    font-size: 24px;
     text-align: center;
-    
+    margin-top: 20px;
+    font-weight: bold;
 }
-.home-greeting{
-    font-size: 25px;
+
+.home-greeting {
+    font-size: 28px;
     margin: 0;
     text-align: center;
     font-family: cursive;
+    color: #0033cc;
 }
-.home-logout{
+
+.home-logout {
     position: fixed;
     top: 10px;
     right: 10px;
-    font-size:26px;
+    font-size: 26px;
     cursor: pointer;
+    color: #0033cc;
 }
-.net-transaction-value{
-   
+
+.net-transaction-value {
     display: flex;
     justify-content: space-around;
-    margin: 10px auto;
+    margin: 20px auto;
+    width: 80%;
 }
-.net-transaction-value-item{
+
+.net-transaction-value-item {
     width: 200px;
-    border: 1px solid black;
-    padding: 5px;
-    border-radius: 5px;
+    border: 1px solid #0033cc;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #c2d1f0;
 }
-.net-transaction-value-amount{
+
+.net-transaction-value-amount {
     background-color: #fff;
     display: block;
     text-align: center;
     font-size: 20px;
     font-weight: bold;
+    color: #0033cc;
 }
-.net-transaction-value-title{
+
+.net-transaction-value-title {
     display: block;
     text-align: center;
+    font-size: 18px;
+    color: #0033cc;
 }
-.transactions-con{
-    max-height: 200px;
+
+.transactions-con {
+    max-height: 400px;
     overflow-y: scroll;
+    margin: 20px auto;
+    width: 80%;
 }
-.add-transaction{
+
+.add-transaction {
     position: fixed;
-  bottom: 10px;
-  right: 10px;
-  height: 20px;
-  width: 20px;
-  background-color: #fff;
-  padding: 5px;
-  border-radius: 50%;
-  border: 2px double #3474eb;
-  cursor: pointer;
+    bottom: 20px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px double #0033cc;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.add-transaction:hover {
+    transform: scale(1.1);
 }
