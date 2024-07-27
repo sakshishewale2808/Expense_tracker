@@ -1,6 +1,4 @@
-body{
-    background-color: #f5e7f3;
-}
+
 .user-input{
     
     display: block;
@@ -13,7 +11,7 @@ body{
 }
 .auth-heading{
     text-align: center;
-    color: #43063c;
+    color: #3474eb;
 }
 
 .auth-form{
@@ -26,7 +24,7 @@ body{
     background-color:  #e2bdd3;
 }
 .btn{
-    background-color: #43063c;
+    background-color:#3474eb;
     color: white;
     padding: 4px 15px;
     border-radius: 20px;
@@ -34,10 +32,6 @@ body{
     cursor: pointer;
     margin: 0 auto;
     margin-left: 150px;
-}
-.btn:hover{
-    transition: 0.3s;
-    background-color: #012c2c;
 }
 .auth-link{
     text-align: center;
